@@ -1,0 +1,109 @@
+/* Basic Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Centering the container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+/* Styling the heading */
+.heading-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #000;
+}
+
+/* Login Wrap */
+.login-wrap {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-control::placeholder {
+    color: #999;
+}
+
+/* Button */
+.btn {
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-primary.submit {
+    display: block;
+    width: auto;
+    padding: 10px 30px;
+    margin: 0 auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .col-md-6, .col-lg-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
